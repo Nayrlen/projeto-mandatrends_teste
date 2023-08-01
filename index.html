@@ -5,13 +5,154 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Desafio HTML responsivo</title>
+    <style>
+
+        /* Configurações padrão */
+
+        * { 
+            margin: 0px;
+            padding: 0px;
+            background-color: #F2F2F2;
+        }
+
+        div {
+                text-align: center;
+        }
+        
+        .header {
+            width: 94vw;
+            height: 21vh;
+        }
+
+        .main {
+            width: 94vw;
+            height: 80vh;
+            margin-top: -4px;
+        }
+
+        .aside {
+            width: 94vw;
+            height: 15vh;
+            margin-top: -4px;
+         }
+
+        .footer {
+            width: 94vw;
+            height: 10vh;
+            margin-bottom: -4px;
+        }
+
+        /* Estilo para tablets */
+
+        @media screen and (min-width: 750px) and (max-width: 900px) { 
+
+            div {
+                text-align: center;
+            }
+
+            .header {
+                width: 76vw;
+                height: 21vh;
+            }
+
+            .main {
+                width: 76vw;
+                height: 80vh;
+            }
+
+            .aside {
+                width: 76vw;
+                height: 13vh;
+            }
+
+            .footer {
+                width: 76vw;
+                height: 8vh;
+            }
+
+        }
+
+        /* Estilo para desktop */
+
+        @media screen and (min-width: 900px) and (max-width: 1200px) { 
+
+            div {
+                text-align: center;
+            }
+
+            .header {
+                width: 66vw;
+                height: 25vh;
+            }
+
+            .main {
+                width: 66vw;
+                height: 80vh;
+            }
+
+            .aside {
+                width: 66vw;
+                height: 15vh;
+            }
+
+            .footer {
+                width: 66vw;
+                height: 10vh;
+            }
+
+        }
+        /* Estilo para grandes telas */
+
+        @media screen and (min-width: 1200px) { 
+
+            div {
+                text-align: center;
+            }
+
+            .header {
+                width: 50vw;
+                height: 25vh;
+            }
+
+            .main {
+                width: 50vw;
+                height: 80vh;
+            }
+
+            .aside {
+                width: 50vw;
+                height: 15vh;
+            }
+
+            .footer {
+                width: 50vw;
+                height: 10vh;
+            }
+
+        }
+
+    </style>
 </head>
 <body>
     <header>
-        <img src="MANDATRENDS/header.png" alt="Cabeçalho do site">
+        <div>
+            <img src="MANDATRENDS/header.png" alt="Cabeçalho do site" class="header">
+        </div>
     </header>
     <main>
-        <img src="MANDATRENDS/main.png" alt="">
+        <div>
+            <img src="MANDATRENDS/main.png" alt="Conteúdo principal" class="main">
+        </div>
     </main>
+    <aside>
+        <div>
+            <img src="MANDATRENDS/aside.png" alt="Conteúdo secundário" class="aside">
+        </div>
+    </aside>
+    <footer>
+        <div>
+            <img src="MANDATRENDS/footer.png" alt="Rodapé do site" class="footer">
+        </div>
+    </footer>
 </body>
 </html>
